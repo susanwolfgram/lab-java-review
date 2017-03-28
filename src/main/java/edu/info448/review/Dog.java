@@ -6,6 +6,11 @@ package edu.info448.review;
  */
 public class Dog extends Animal
 {
+	public static class Smell {
+		public Smell() {
+			
+		}
+	}
 	public static final String BEST_BREED = "Husky";
 
 	private String name;
@@ -25,7 +30,11 @@ public class Dog extends Animal
 	}
 
 	public void bark() {
-		System.out.println(this+" says: Bark!");
+		System.out.println(this+" says: Bark Bark!");
+	}
+
+	public void speak() {
+		this.bark(); 
 	}
 
 	public void wagTail(int times){
